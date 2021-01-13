@@ -34,7 +34,7 @@ body {
 	transition: fill 0.5s ease-in-out;
 }
 .logo .numberLight path {
-	fill: #808017;
+	fill: #e94b3c50;
 }
 .logo:hover .numberLight path,
 .logo:focus .numberLight path {
@@ -51,7 +51,7 @@ body {
 	transition: fill 0.5s ease-in-out;
 }
 .logo-dark .numberDark path {
-	fill: #808017;
+	fill: #e94b3c50;
 }
 .logo-dark:hover .numberDark path,
 .logo-dark:focus .numberDark path {
