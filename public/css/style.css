@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background: #000000; */
+	min-height: 100vh;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Styling logos */
+h3 {
+	color: #e94b3c;
+	margin: 0.3em auto;
+	font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+.logo,
+.logo-dark {
+	user-select: none;
+	pointer-events: visible;
+	margin: 3em auto;
+	padding: 1em;
+	transform: scale(1.5);
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px solid #e94b3c;
+}
+.logo {
+	background: #ffffff99;
+}
+.logo-dark {
+	background: #2c2c2c;
+}
+.logo path,
+.logo-dark path {
+	transition: fill 0.5s ease-in-out;
+}
+
+/* Styling Light Logo */
+.logo:hover,
+.logo:focus,
+.logo-dark:hover,
+.logo-dark:focus {
+	box-shadow: 4px 8px 8px rgba(233, 75, 60, 0.5);
+}
+
+/* Styling Dark Logo */
+.logo-dark .textDark path {
+	fill: #ffffffee;
+	transition: fill 0.5s ease-in-out;
+}
