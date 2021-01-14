@@ -31,7 +31,7 @@ h3 {
 	margin: 1em auto;
 	cursor: pointer;
 	border-radius: 50%;
-	border: 1px solid #e94b3c;
+	border: 2px solid #e94b3c;
 }
 .logo .replaced-svg,
 .logo-dark .replaced-svg {
