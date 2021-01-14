@@ -22,26 +22,32 @@
 				let svg = xmlDoc.querySelector("svg");
 				// console.log(svg);
 
-				// Add replaced image's ID to the new SVG
-				if (typeof imgID !== "undefined") {
-					svg.setAttribute("id", imgID);
-				}
-
-				// Add replaced image's classes to the new SVG
-				if (typeof imgClass !== "undefined") {
-					svg.setAttribute("class", imgClass + " replaced-svg");
-				}
-
 				// Remove any invalid XML tags as per http://validator.w3.org
 				svg.removeAttribute("xmlns:a");
 
+				const itag = document.createElement("i");
+
+				// Add replaced image's ID to the new SVG
+				if (typeof imgID !== "undefined" && imgID != null) {
+					itag.setAttribute("id", imgID);
+				}
+
+				// Add replaced image's classes to the new SVG
+				if (typeof imgClass !== "undefined" && imgClass != null) {
+					itag.setAttribute("class", imgClass);
+					svg.setAttribute("class", "replaced-svg");
+				}
+
+				itag.appendChild(svg);
+				// console.log(itag);
+
 				// Replace image with new SVG
 				// console.log(svg);
-				img.parentNode.replaceChild(svg, img);
+				img.parentNode.replaceChild(itag, img);
 			})
 			.catch((error) => {
 				// Handle error
-				console.log(error);
+				console.error(error);
 			});
 	});
 })();
