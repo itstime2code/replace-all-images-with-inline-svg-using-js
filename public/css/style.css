@@ -56,3 +56,17 @@ h3 {
 .logo-dark:focus {
 	box-shadow: 4px 8px 8px rgba(233, 75, 60, 0.5);
 }
+
+.logo #vector {
+	stroke-dasharray: 520;
+	stroke-dashoffset: 520;
+	animation: draw 5s forwards infinite;
+	-webkit-animation: draw 5s forwards infinite;
+}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+		fill: #e94b3c;
+	}
+}
